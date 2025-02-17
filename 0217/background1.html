@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+<style>
+*{margin: 0;padding: 0;}
+.back{
+    width:100%;
+    height: 100vh;
+}
+.back1{
+    background-color: aqua;
+    background-image: url(img/b1.jpg);
+}
+.back2{
+    background-color: blueviolet;
+    background-image: url(img/b2.jpg);
+}
+.back3{
+    background-color: tomato;
+    background-image: url(img/b3.jpg);
+    background-attachment: fixed;
+}
+.back4{
+    background-color: yellowgreen;
+    background-image: url(img/b4.jpg);
+}
+.back5{
+    background-color: tan;
+    background-image: url(img/b5.jpg);
+}
+.back6{
+    background-color: coral;
+    background-image: url(images/b1.jpg);
+    /* 배경이미지 반복 여부 - repeat-x 가로로 배열 */
+    background-repeat: no-repeat;
+    /* 배경이미지를 원하는 위치 */
+    background-position:70% 30%;
+    /* 배경이미지의 크기 */
+    background-size: cover;
+}
+.back7{
+  /* 배경이미지 : 색상 이미지저장위치 이미지반복 이미지화면 위치 / 이미지 사이즈  */
+    background:darkgrey url(images/b2.jpg) no-repeat 70% 30% / 600px 300px;
+}
+</style>
+</head>
+<body>
+    <!-- 165p 참고 -->
+     <div class="back back1">배경1</div>
+     <div class="back back2">배경2</div>
+     <div class="back back3">배경3</div>
+     <div class="back back4">배경4</div>
+     <div class="back back5">배경5</div>
+     <div class="back back6">배경6</div>
+     <div class="back back7">배경7</div>
+</body>
+</html>
