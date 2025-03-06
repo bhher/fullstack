@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        //html, css를 읽고 나서 실행해라
+        //window.onload = function(){내용}
+
+        document.addEventListener('DOMContentLoaded',function(){
+
+        //const element = document.getElementById('myDiv');
+        const element =  document.querySelector("#myDiv");
+        console.log(element.textContent); //"Hello, World!" 출력
+    
+        //const elements = document.getElementsByClassName("myClass");
+        const elements = document.querySelectorAll(".myClass");
+        console.log(elements[0].textContent);// "First Div" 출력
+        console.log(elements[1].textContent); // "Second Div" 출력
+    
+        const paragraphs = document.getElementsByTagName('p');
+        console.log(paragraphs.length); // 2 출력
+        console.log(paragraphs[0].textContent); //Paragraph 1
+        console.log(paragraphs[1].textContent);
+    });
+    </script>
+
 </head>
 <body>
     <div id="myDiv">Hello, World!</div>
@@ -14,19 +36,3 @@
 
 </body>
 </html>
-<script>
-    //const element = document.getElementById('myDiv');
-    const element =  document.querySelector("#myDiv");
-    console.log(element.textContent); //"Hello, World!" 출력
-
-    //const elements = document.getElementsByClassName("myClass");
-    const elements = document.querySelectorAll(".myClass");
-    console.log(elements[0].textContent);// "First Div" 출력
-    console.log(elements[1].textContent); // "Second Div" 출력
-
-    const paragraphs = document.getElementsByTagName('p');
-    console.log(paragraphs.length); // 2 출력
-    console.log(paragraphs[0].textContent); //Paragraph 1
-    console.log(paragraphs[1].textContent);
-
-</script>
