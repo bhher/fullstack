@@ -2,12 +2,12 @@ package a0402.javaair;
 
 import java.time.LocalDate;
 import java.time.Period;
-
+//항공기 승객정보 저장 관리
 public class Passenger { //예매 정보를 저장 - 나이검증 여기서
     private String name; //승객이름
     private int birthDate; //생년월일 831016
     private String pw; //예약 비밀 번호
-    private String seat; // 좌석
+    private String seat; // 승갱이 선택한  좌석 번호
     public Passenger(String name, int birthDate) {
         this.name = name;
         this.birthDate = birthDate;

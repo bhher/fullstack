@@ -65,16 +65,16 @@ public class Flight { //항공편정보
         String priceComma =  priceFormat.format(price);
         return ". "+"목적지 : " + destination + ", 출발시간 : " + time + ",가격 : " + priceComma + "]";
     }
-    
+    //좌석정보출력(좌석을 4개씩 출력하여 가로로 배열)
     public void seatToString(){
         for(int i = 0; i < seats.size()-3; i+=4){
-           System.out.printf("|   [%2s]\t\t[%2s][%2s] \t  [%2s]   |\n",seats.get(i),seats.get(i+1),seats.get(i+2),seats.get(i+3));
+           System.out.printf("|   [%2s]\t\t[%2s][%2s] \t\t  [%2s]   |\n",seats.get(i),seats.get(i+1),seats.get(i+2),seats.get(i+3));
         }
     }
-    //[1][2][3][4]
-    //[5][6][7][8]
-    //[9][10][11][12]
-     //[13][14][15][16] 
-     //[17][18][19][20]
+// |   [ 1]        [ 2][ 3]      [ 4]   |
+// |   [ 5]        [ 6][ 7]      [ 8]   |
+// |   [ 9]        [10][11]      [12]   |
+// |   [13]        [14][15]      [16]   |
+// |   [17]        [18][19]      [20]   |
 
 }

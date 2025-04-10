@@ -24,7 +24,7 @@ $(function(){
         //         $('article').eq(i).addClass('on');
         //         $('.scrollNav li').removeClass('on');
         //         $('.scrollNav li').eq(i).addClass('on');
-        //     }
+        //     }``~
         // });
 
 
